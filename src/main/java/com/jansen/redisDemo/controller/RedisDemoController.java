@@ -1,6 +1,5 @@
 package com.jansen.redisDemo.controller;
 
-import com.jansen.redisDemo.dao.UserMapper;
 import com.jansen.redisDemo.dto.User;
 import com.jansen.redisDemo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +14,8 @@ public class RedisDemoController {
 
     @Autowired
     private UserService userService;
+
+
 
     @RequestMapping(value = "/test",method = RequestMethod.GET)
     @ResponseBody

@@ -1,6 +1,8 @@
 package com.jansen.redisDemo.dto;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
     private Integer userId;
 
     private String userName;

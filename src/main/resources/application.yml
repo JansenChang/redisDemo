@@ -24,12 +24,19 @@ spring:
   testOnReturn: false
   poolPreparedStatements: true
   maxOpenPreparedStatements: 20
+
+  redis:
+    database: 0
+    host: 119.23.22.16
+    port: 6379
+    password: password
+
 mybatis:
   mapper-locations: classpath:mapping/*.xml
   type-aliases-package: com.jansen.redisDemo.dao
-#pagehelper分页插件
-pagehelper:
-  helperDialect: mysql
-  reasonable: true
-  supportMethodsArguments: true
-  params: count=countSql
+
+
+
+
+
+
